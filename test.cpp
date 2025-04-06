@@ -1,3 +1,9 @@
+/*
+*   Base64cpp - Simple library to encode and decode base64 texts for C++ programs
+*   test.cpp
+*   Created by Hawk2811
+*/
+
 #include <iostream>
 #include "base64cpp.h"
 
