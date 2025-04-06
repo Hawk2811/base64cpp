@@ -1,0 +1,4 @@
+.vscode
+out/
+cache/
+.DS_STORE
