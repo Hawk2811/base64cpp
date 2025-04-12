@@ -8,6 +8,6 @@
 #include <algorithm>
 
 using namespace std;
-
+//Declaration of Functions b64_encode and b64_decode
 string b64_encode(string input);
 string b64_decode(string input);
