@@ -46,13 +46,13 @@ string b64_decode(string input){
     }
     
     int val=0, valb=-8;
-    for (char c : input) {
-        if (T[c] == -1){
+    for (char c : input) {//For each character "c" in the input string, it checks if "c" is a valid Base64 character using the lookup table "T". 
+        if (T[c] == -1){//If valid, it shifts "val" left by 6 bits and adds the value from T[c].
             break;
         }
-        val = (val << 6) + T[c];
+        val = (val << 6) + T[c]; 
         valb += 6;
-        if (valb >= 0){
+        if (valb >= 0){//If there are at least 8 bits in "val", it extracts the top 8 bits and appends the corresponding character to "out".
             out.push_back(char((val>>valb)&0xFF));
             valb -= 8;
         }
